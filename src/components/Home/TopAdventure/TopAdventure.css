@@ -1,0 +1,7 @@
+.mainPart{
+    background-image: linear-gradient(to bottom, rgba(0,0,0, .1), rgba(0,0,0, 1)), url('../../Images/two-hikers-walking-narrow-road-surrounded-with-greenery-with-cloudy-mountain_181624-797.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
