@@ -17,21 +17,19 @@ const Services = () => {
     }, [])
 
     return (
-        <>
-            <h1 className="text-center mt-5">Top Tour Packages</h1>
+        <div style={{backgroundColor:'whitesmoke'}} className='py-5'>
+            <h1 className="text-center" style={{fontWeight:'bold', color:'#020f24'}}>Top Tour Packages</h1>
             <div className='d-flex justify-content-center flex-wrap my-5'>
                 {
                     spinner && <Spinner animation="border" variant="success" />
                 }
 
                 {
-                    packages.map(pkg=> <ServiceCard pkg={pkg}></ServiceCard>)
+                    packages.map(pkg=> <ServiceCard key={pkg._id} pkg={pkg}></ServiceCard>)
                 }
-                {/* <ServiceCard img={IceSkating} title={'ICE SKATING'} tk={'150'} />
-                <ServiceCard img={MountainTrekking} title={'MOUNTAIN TREKKING'} tk={'250'} />
-                <ServiceCard img={SurfingInSea} title={'SURFING IN SEA'} tk={'650'} /> */}
+               
             </div>
-        </>
+        </div>
     );
 };
 

@@ -19,15 +19,15 @@ const MakeAdmin = () => {
     };
 
     return (
-        <div>
-            <h2 className="text-center m-5">Make Admin</h2>
+        <div style={{backgroundColor:'whitesmoke', paddingBottom:'15vw', paddingTop:'8vw'}}>
+            <h2 className="text-center m-5" style={{color:'#020f24', fontWeight:'bold'}}>Make Admin</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <label for="email">Enter Email</label>
+                <label for="email" style={{color:'#020f24'}}>Enter Email</label>
                 <input name='email' {...register("email", { required: true })} />
                 {errors.email && <span>This field is required</span>}
 
-                <input type="submit" />
+                <input type="submit" style={{backgroundColor:'#020f24'}} />
             </form>
         </div>
     );

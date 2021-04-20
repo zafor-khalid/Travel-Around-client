@@ -50,7 +50,7 @@ const ConfirmationCart = () => {
     return (
         <div>
             <div style={{ display: confirmationData  ? 'none' : 'block' }}>
-                <h1 className="text-center my-5">Give Details Information</h1>
+                <h1 className="text-center my-5" style={{color:'#020f24',fontWeight:'bold'}}>Give Details Information</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
 
                     <input defaultValue={loggedInUser.displayName} {...register("name", { required: true })} />
@@ -65,18 +65,18 @@ const ConfirmationCart = () => {
                     <input defaultValue="Phone" {...register("phone", { required: true })} />
                     {errors.Phone && <span>This field is required</span>}
 
-                    <input type="submit" />
+                    <input type="submit" style={{backgroundColor:'#020f24'}} />
 
                 </form>
             </div>
 
-            <div style={{display: confirmationData && !congratulate ? 'block' : 'none' }}>
-                <h1 className="text-center my-3">Confirm Payment</h1>
+            <div style={{display: confirmationData && !congratulate ? 'block' : 'none' , marginTop:'10rem', marginBottom:'10rem'}}>
+                <h1 className="text-center my-5" style={{color:'#020f24', fontWeight:'bold'}}>Confirm Payment</h1>
                 <ProcessPayment handlePayment={handlePaymentSuccess} />
             </div>
 
-            <div style={{display: confirmationData && congratulate ? 'block' : 'none', margin:'11vw' }}>
-                <h1 className="text-center my-3">CONGRATULATION! YOUR BOOKING CONFIRMED!</h1>
+            <div style={{display: confirmationData && congratulate ? 'block' : 'none', marginTop:'15rem', marginBottom:'18rem' }}>
+                <h2 className="text-center my-3" style={{color:'#020f24',fontWeight:'250'}}>CONGRATULATION! YOUR BOOKING CONFIRMED!</h2>
                
             </div>
         </div>

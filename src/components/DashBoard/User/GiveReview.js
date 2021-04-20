@@ -29,22 +29,22 @@ const GiveReview = () => {
 
     return (
         <div className='my-5'>
-            <h1 className='text-center my-5'>Drop Your Opinion</h1>
+            <h1 className='text-center my-5' style={{color:'#020f24', fontWeight:'bold'}}> Drop Your Opinion</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
 
-                <label for='reviewRating'>Rating</label>
+                <label for='reviewRating' style={{color:'#020f24'}}>Rating</label>
                 <input name='reviewRating' defaultValue='10' {...register("reviewRating", { required: true })} />
                 {errors.reviewRating && <span>This field is required</span>}<br />
 
-                <label for='profession'>Profession</label>
+                <label for='profession' style={{color:'#020f24'}}>Profession</label>
                 <input name='profession' defaultValue='profession' {...register("profession", { required: true })} />
                 {errors.reviewRating && <span>This field is required</span>}<br />
 
-                <label for='reviewDescription'>Review</label>
+                <label for='reviewDescription' style={{color:'#020f24'}}>Review</label>
                 <input name='reviewDescription' defaultValue='Description' {...register("reviewDescription", { required: true })} style={{ height: '6vw' }} />
                 {errors.reviewDescription && <span>This field is required</span>}
 
-                <input type="submit" />
+                <input type="submit" style={{backgroundColor:'#020f24'}}/>
             </form>
         </div>
     );

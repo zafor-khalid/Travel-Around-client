@@ -4,6 +4,7 @@ import "firebase/auth";
 import firebaseConfig from './firebase.config'
 import { UserContext } from '../Routing/Routing';
 import { useHistory, useLocation } from 'react-router';
+import google from '../Images/google.png'
 
 const initializeLoginFramework = () => {
     !firebase.apps.length && firebase.initializeApp(firebaseConfig);
@@ -41,8 +42,11 @@ const Login = () => {
     }
 
     return (
-        <div className="text-center" style={{margin:'12vw'}}>
-            <button className="btn btn-primary" onClick={handleLogIn}>Continue with gmail</button>
+        <div className='text-center' style={{ marginTop: '16rem', marginBottom:'16rem' }}>
+            <button className="btn btn-outline-primary" onClick={handleLogIn}>
+                <img className='mr-1' src={google} alt="" height='30px' width='30px' />
+                Continue with Google</button>
+
         </div>
     );
 };

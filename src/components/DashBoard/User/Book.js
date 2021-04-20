@@ -15,13 +15,13 @@ const Book = () => {
     }
 
     return (
-        <div className=" m-3">
-        <h3>Total Products: {book.length}</h3>
+        <div className="text-center" style={{marginBottom:'10rem', marginTop:'5rem'}}>
+        <h3 style={{color:'#020f24', fontWeight:'bold'}}>Total Packages: {book.length}</h3>
 
         <div className="d-flex justify-content-center">
             <Table striped bordered hover size="sm" className="w-50">
                 <thead>
-                    <tr className="bg-success text-white">
+                    <tr className=" text-white" style={{backgroundColor:'#020f24'}}>
                         <th>#</th>
                         <th>Package Name</th>
                         <th>Cost</th>
@@ -41,8 +41,8 @@ const Book = () => {
                     }
                     <tr>
 
-                        <td colSpan="2" className="bg-success text-white">Total</td>
-                        <td className="bg-success text-white">Tk {total}</td>
+                        <td colSpan="2" className=" text-white" style={{backgroundColor:'#020f24'}}>Total</td>
+                        <td className=" text-white" style={{backgroundColor:'#020f24'}}>Tk {total}</td>
                     </tr>
 
                 </tbody>
@@ -50,7 +50,7 @@ const Book = () => {
             </Table>
 
         </div>
-        <button className="btn btn-success " onClick={confirm}>Check Out</button>
+        <button className="btn text-white " style={{backgroundColor:'#020f24'}} onClick={confirm}>Confirm</button>
 
     </div>
     );

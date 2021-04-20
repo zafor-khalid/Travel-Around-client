@@ -3,5 +3,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-   
+    padding: 5vw;
+}
+.custom-card:hover{
+    box-shadow: 5px 5px 35px rgb(255, 255, 255);
 }

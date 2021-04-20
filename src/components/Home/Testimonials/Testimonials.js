@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TestimonialCard from './TestimonialCard';
-import reviewerOne from '../../Images/review-1.jpg'
-import reviewerTwo from '../../Images/review-2.jpg'
-import reviewerThree from '../../Images/review-3.jpg'
 import { Carousel } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Testimonials = () => {
     const [allReviews, setAllReviews] = useState([]);
@@ -21,17 +19,17 @@ const Testimonials = () => {
     const count = 0;
 
     return (
-        <div>
-            <h1 className='text-center'>Reviews</h1>
+        <div style={{ backgroundColor: 'whitesmoke' }} className='py-5'>
+            <h1 className='text-center pt-5' style={{ fontWeight: 'bold', color: '#020f24' }}>Reviews</h1>
 
-            <Carousel indicators={false} interval={300000} >
+            <Carousel indicators={false} interval={5000} >
                 {
                     allReviews.map((review, idx) => (
 
                         <Carousel.Item>
-                            <div className=''>
+                            <div className=''  >
 
-                                <div className='d-flex justify-content-center flex-wrap m-5'>
+                                <div className='d-flex justify-content-center flex-wrap m-5' >
                                     <TestimonialCard img={review.img} name={review.name} description={review.reviewDescription} rating={review.reviewRating} profession={review.profession} />
 
                                 </div>
@@ -42,6 +40,12 @@ const Testimonials = () => {
                 }
 
             </Carousel>
+            <div className="py-5 text-center">
+                <Link to='/givereview' >
+                    <button className="btn text-white" style={{ backgroundColor: '#020f24' }}>Drop A Review</button>
+                </Link>
+            </div>
+
         </div>
 
     );

@@ -23,15 +23,15 @@ const AllBookingsList = () => {
             .then(res => res.json())
             .then(data => {
                 setStatus(data);
-                alert(data);
+                alert('Status Changed');
             })
     }
 
 
     return (
-        <div style={{ margin: '4vw' }}>
-            <h1 className='text-center m-3'>ALL Booking List</h1>
-            <Table className="w-75 m-auto text-center" striped bordered hover responsive>
+        <div style={{ paddingTop: '5vw', paddingBottom: '7vw', backgroundColor:'whitesmoke' }}>
+            <h1 className='text-center m-3' style={{color:'#020f24', fontWeight:'bold'}}>ALL Booking List</h1>
+            <Table className="w-75 m-auto text-center" striped bordered hover responsive style={{color:'#020f24'}}>
                 <thead>
                     <tr>
                         <th>#</th>
@@ -53,7 +53,7 @@ const AllBookingsList = () => {
                                 <td>
                                     {
                                         <Dropdown>
-                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                            <Dropdown.Toggle style={{backgroundColor:'#020f24'}} id="dropdown-basic">
                                                 See All ({i.services.length})
                                         </Dropdown.Toggle>
 
@@ -75,10 +75,10 @@ const AllBookingsList = () => {
                                             {i.status}
                                         </Dropdown.Toggle>
 
-                                        <Dropdown.Menu className="bg-secondary " >
-                                            <Dropdown.Item className="bg-warning text-white" onClick={() => handleStatus('pending', i._id)}>Pending</Dropdown.Item>
-                                            <Dropdown.Item className="bg-info text-white" onClick={() => handleStatus('reviewing', i._id)}>Reviewing</Dropdown.Item>
-                                            <Dropdown.Item className="bg-success text-white" onClick={() => handleStatus('confirmed', i._id)}>Confirmed</Dropdown.Item>
+                                        <Dropdown.Menu >
+                                            <Dropdown.Item onClick={() => handleStatus('pending', i._id)} style={{color:'#cd7509'}}>Pending</Dropdown.Item>
+                                            <Dropdown.Item  onClick={() => handleStatus('reviewing', i._id)} style={{color:'#3aa5e3'}}>Reviewing</Dropdown.Item>
+                                            <Dropdown.Item  onClick={() => handleStatus('confirmed', i._id)} style={{color:'#14a014'}}>Confirmed</Dropdown.Item>
                                         </Dropdown.Menu>
                                     </Dropdown>
                                 </td>

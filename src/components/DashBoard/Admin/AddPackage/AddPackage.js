@@ -46,8 +46,8 @@ const AddPackage = () => {
     }
 
     return (
-        <div className='my-5'>
-            <h3>Add New Package</h3>
+        <div style={{ paddingTop: '5vw', paddingBottom: '5vw', backgroundColor:'whitesmoke' }}>
+            <h3 style={{color:'#020f24', fontWeight:'bold'}} className='mb-5'>Add New Package</h3>
             <form onSubmit={handleSubmit(onSubmit)}>
 
                 <input name="Title" defaultValue="Title" {...register("title")} className="my-1" />
@@ -58,7 +58,7 @@ const AddPackage = () => {
                 <br />
                 <input type="file"  className="my-1" onChange={handleImgUpload} />
                 <br />
-                <input type="submit" />
+                <input type="submit" style={{backgroundColor:'#020f24'}}/>
             </form>
         </div>
     );

@@ -27,7 +27,7 @@ const Routing = () => {
     return (
         <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
             <BookContext.Provider value={[book, setBook]}>
-                <h1>{loggedInUser.email}</h1>
+                
                 <Router>
                     <NavigationBar />
                     <Switch>
@@ -46,24 +46,24 @@ const Routing = () => {
                         <PrivateRoute path='/book'>
                             <Book />
                         </PrivateRoute>
-                        <Route path='/bookinglist'>
+                        <PrivateRoute path='/bookinglist'>
                             <BookingList />
-                        </Route>
-                        <Route path='/givereview'>
+                        </PrivateRoute>
+                        <PrivateRoute path='/givereview'>
                             <GiveReview />
-                        </Route>
-                        <Route path='/allbookingslist'>
+                        </PrivateRoute>
+                        <PrivateRoute path='/allbookingslist'>
                             <AllBookingsList />
-                        </Route>
-                        <Route path='/addPackage'>
+                        </PrivateRoute>
+                        <PrivateRoute path='/addPackage'>
                             <AddPackage />
-                        </Route>
-                        <Route path='/makeadmin'>
+                        </PrivateRoute>
+                        <PrivateRoute path='/makeadmin'>
                             <MakeAdmin />
-                        </Route>
-                        <Route path='/manageservices'>
+                        </PrivateRoute>
+                        <PrivateRoute path='/manageservices'>
                             <Manageservices />
-                        </Route>
+                        </PrivateRoute>
                         <Route path='*'>
                             <h1>NOT FOUND</h1>
                         </Route>

@@ -7,7 +7,7 @@ import './TopAdventure.css'
 const TopAdventure = () => {
     return (
         <section className="mainPart ">
-            <h1 className=" text-center ">Our Top Adventure </h1>
+            <h1 className=" text-center mb-5 " style={{color:'white', fontWeight:'bold'}}>Our Top Adventure </h1>
             <div className=" d-flex justify-content-center flex-wrap mb-5">
                 <AdventureCard img={AdventureOne} title={'Mountains'} />
                 <AdventureCard img={AdventureTwo} title={'Ocean'} />

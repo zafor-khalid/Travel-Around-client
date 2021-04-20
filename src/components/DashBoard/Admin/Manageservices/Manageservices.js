@@ -12,8 +12,8 @@ const Manageservices = () => {
 
     },[])
     return (
-        <>
-            <h1 className="text-center mt-5">Manage ALL Packages</h1>
+        <div style={{backgroundColor:'whitesmoke', paddingTop:'5vw', paddingBottom:'5vw'}}>
+            <h1 className="text-center" style={{color:'#020f24', fontWeight:'bold'}}>Manage ALL Packages</h1>
             <div className='d-flex justify-content-center flex-wrap my-5'>
                 
                 {
@@ -21,7 +21,7 @@ const Manageservices = () => {
                 }
                 
             </div>
-        </>
+        </div>
     );
 };
 

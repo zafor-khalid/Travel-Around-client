@@ -34,9 +34,9 @@ const SimpleCardFrom = ({ handlePayment }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='text-center' onSubmit={handleSubmit}>
             <CardElement />
-            <button type="submit" disabled={!stripe}>
+            <button style={{backgroundColor:'#020f24'}} type="submit" disabled={!stripe}>
                 Pay
       </button>
             {
