@@ -17,7 +17,7 @@ const AddPackage = () => {
             imageURL: imgURL
         };
 
-        const url ='http://localhost:5000/addPackage';
+        const url ='https://radiant-ridge-25179.herokuapp.com/addPackage';
         fetch(url, {
             method: "POST",
             headers: {

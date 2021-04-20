@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ac5773c7.chunk.css",
+    "main.js": "/static/js/main.617fcf50.chunk.js",
+    "main.js.map": "/static/js/main.617fcf50.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8b6fbc15.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8b6fbc15.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.fc247c02.chunk.js": "/static/js/2.fc247c02.chunk.js",
+    "static/js/2.fc247c02.chunk.js.map": "/static/js/2.fc247c02.chunk.js.map",
+    "static/js/3.e5f5a231.chunk.js": "/static/js/3.e5f5a231.chunk.js",
+    "static/js/3.e5f5a231.chunk.js.map": "/static/js/3.e5f5a231.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.ac5773c7.chunk.css.map": "/static/css/main.ac5773c7.chunk.css.map",
+    "static/js/2.fc247c02.chunk.js.LICENSE.txt": "/static/js/2.fc247c02.chunk.js.LICENSE.txt",
+    "static/media/cave.f0c612a6.png": "/static/media/cave.f0c612a6.png",
+    "static/media/fort.a0595d32.png": "/static/media/fort.a0595d32.png",
+    "static/media/google.cadee8cd.png": "/static/media/google.cadee8cd.png",
+    "static/media/placeholder.509b0750.png": "/static/media/placeholder.509b0750.png",
+    "static/media/surfing.47c59929.png": "/static/media/surfing.47c59929.png",
+    "static/media/tour_1.be133fc9.jpg": "/static/media/tour_1.be133fc9.jpg",
+    "static/media/tour_2.f26f016e.jpg": "/static/media/tour_2.f26f016e.jpg",
+    "static/media/tour_4.6344fc30.jpg": "/static/media/tour_4.6344fc30.jpg",
+    "static/media/TopAdventure.css": "/static/media/two-hikers-walking-narrow-road-surrounded-with-greenery-with-cloudy-mountain_181624-797.bb6bf009.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b6fbc15.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.fc247c02.chunk.js",
+    "static/css/main.ac5773c7.chunk.css",
+    "static/js/main.617fcf50.chunk.js"
+  ]
+}

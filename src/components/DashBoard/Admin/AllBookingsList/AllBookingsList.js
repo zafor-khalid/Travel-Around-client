@@ -6,7 +6,7 @@ const AllBookingsList = () => {
     const [allList, setAllList] = useState([]);
     const [status, setStatus] = useState(false);
     useEffect(() => {
-        fetch('http://localhost:5000/allbookinglist')
+        fetch('https://radiant-ridge-25179.herokuapp.com/allbookinglist')
             .then(res => res.json())
             .then(data => {
                 setAllList(data)
@@ -15,7 +15,7 @@ const AllBookingsList = () => {
     }, [status])
 
     const handleStatus = (newStatus, id) => {
-        fetch(`http://localhost:5000/updatestatus/${id}`, {
+        fetch(`https://radiant-ridge-25179.herokuapp.com/updatestatus/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({newStatus})

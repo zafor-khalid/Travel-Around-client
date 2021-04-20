@@ -8,7 +8,7 @@ const Testimonials = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/allreviews')
+        fetch('https://radiant-ridge-25179.herokuapp.com/allreviews')
             .then(res => res.json())
             .then(data => {
                 setAllReviews(data)

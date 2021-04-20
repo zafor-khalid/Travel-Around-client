@@ -30,7 +30,7 @@ const ConfirmationCart = () => {
             status: 'pending'
 
         };
-        fetch('http://localhost:5000/confirmBooking', {
+        fetch('https://radiant-ridge-25179.herokuapp.com/confirmBooking', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

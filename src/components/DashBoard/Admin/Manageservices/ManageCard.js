@@ -6,7 +6,7 @@ const ManageCard = ({pkg}) => {
     const history = useHistory();
     const handleDelete = (id) => {
         
-        fetch(`http://localhost:5000/deletepackage/${id}`,{
+        fetch(`https://radiant-ridge-25179.herokuapp.com/deletepackage/${id}`,{
             method: 'DELETE'
         })
         .then(res=> res.json())

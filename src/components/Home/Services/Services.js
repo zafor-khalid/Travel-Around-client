@@ -8,7 +8,7 @@ const Services = () => {
     
     useEffect(() => {
         
-        fetch('http://localhost:5000/allPackages')
+        fetch('https://radiant-ridge-25179.herokuapp.com/allPackages')
             .then(res => res.json())
             .then(data => {
                 setPackages(data)

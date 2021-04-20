@@ -12,7 +12,7 @@ const GiveReview = () => {
         data.name = loggedInUser.displayName;
         data.img = loggedInUser.photoURL;
         console.log(data)
-        fetch('http://localhost:5000/addreview', {
+        fetch('https://radiant-ridge-25179.herokuapp.com/addreview', {
             method: "POST",
             headers: {
                 'Content-type': 'application/json'

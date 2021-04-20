@@ -10,7 +10,7 @@ const NavigationBar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [admin, setAdmin] = useState(false);
     useEffect(() => {
-        fetch('http://localhost:5000/adminlist')
+        fetch('https://radiant-ridge-25179.herokuapp.com/adminlist')
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
