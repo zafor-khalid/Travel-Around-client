@@ -13,5 +13,6 @@
                     c) see booking list 
                     d) update booking status 
                     e) make another admin.
+            6. Anyone can drop a review
 
            
