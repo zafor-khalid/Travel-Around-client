@@ -1,10 +1,12 @@
-### Travel Around (simple MERN project)
-## livesite: https://travel-around-b536d.web.app/
-# Features: 
-            1. user can choose travel packages using credit card
-            2. anyone one drop a review & it added dynamically in testimonial
-            3. in booking list , user can see his previous bookings with status(pending/reviewing/confirmed)
-            4.if an admin entire with a admin gmail, his dashboard will different from normal user.
-            5. admin can see all booking list and manage them
-            6. admin can make anyone another admin.
-# Extra: An react countdown is added in upcoming country tour section             
+# Project: Travel Around (A website for travellers)
+## Live: https://travel-around-b536d.web.app/
+## Server: https://github.com/zafor-khalid/Travel-Around-server
+### Features: 
+            
+            1. One can book a package using a credit card.
+            2. Firebase authentication system for private routing is used.
+            3. User can see his all booking status(pending/reviewing/confirmed) in the booking list.
+            4. Dashboard is different for users and admin.
+            5. Admin can control packages, add new packages, see booking list, update booking status, make another admin.
+
+           
