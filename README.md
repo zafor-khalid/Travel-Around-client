@@ -7,6 +7,11 @@
             2. Firebase authentication system for private routing is used.
             3. User can see his all booking status(pending/reviewing/confirmed) in the booking list.
             4. Dashboard is different for users and admin.
-            5. Admin can control packages, add new packages, see booking list, update booking status, make another admin.
+            5. Admin can 
+                    a) control packages 
+                    b) add new packages 
+                    c) see booking list 
+                    d) update booking status 
+                    e) make another admin.
 
            
